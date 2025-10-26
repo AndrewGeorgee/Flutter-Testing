@@ -38,18 +38,18 @@ class Bio extends StatelessWidget {
           radius: MediaQuery.of(context).size.width * 0.15,
           child: Text(
             '${user.id}',
-            style: textTheme.headline3!.copyWith(color: Colors.white),
+            style: textTheme.displaySmall!.copyWith(color: Colors.white),
           ),
         ),
         const SizedBox(height: 6),
         BioInfo(
           info: user.name,
-          style: textTheme.headline6,
+          style: textTheme.titleLarge,
         ),
         const SizedBox(height: 6),
         BioInfo(
           info: '@${user.username}',
-          style: textTheme.subtitle1,
+          style: textTheme.titleMedium,
         ),
         const SizedBox(height: 2),
         BioInfo(
@@ -150,7 +150,7 @@ class SectionHeader extends StatelessWidget {
           Text(
             header,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
         ],
       ),
@@ -185,7 +185,7 @@ class UserInfoBar extends StatelessWidget {
           ),
           Text(
             '$info',
-            style: textTheme.bodyText1,
+            style: textTheme.bodyLarge,
           ),
         ],
       ),

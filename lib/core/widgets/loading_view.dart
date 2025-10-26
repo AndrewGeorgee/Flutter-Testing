@@ -23,3 +23,7 @@ class LoadingView extends StatelessWidget {
     );
   }
 }
+
+extension on TextTheme {
+  get headline5 => null;
+}
